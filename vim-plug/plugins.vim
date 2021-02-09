@@ -22,6 +22,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'asvetliakov/vim-easymotion'
     Plug 'ChristianChiarulli/vscode-easymotion'
     Plug 'machakann/vim-highlightedyank'
+
     else
       
     " Easymotion
@@ -40,7 +41,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-treesitter/nvim-treesitter'
     Plug 'nvim-treesitter/playground'
 
-
     " FZF
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
@@ -52,6 +52,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+
+    " Intellisense
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     " nvim-editcommand
     Plug 'brettanomyces/nvim-editcommand'
