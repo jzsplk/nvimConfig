@@ -18,55 +18,62 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
     if exists('g:vscode')
-    " Easy motion for VSCode
-    " Plug 'asvetliakov/vim-easymotion'
-    Plug 'ChristianChiarulli/vscode-easymotion'
-    Plug 'machakann/vim-highlightedyank'
+      " Easy motion for VSCode
+      " Plug 'asvetliakov/vim-easymotion'
+      Plug 'ChristianChiarulli/vscode-easymotion'
+      Plug 'machakann/vim-highlightedyank'
 
     else
       
-    " Easymotion
-    Plug 'easymotion/vim-easymotion'
+      " Easymotion
+      Plug 'easymotion/vim-easymotion'
 
-    " Surround
-    Plug 'tpope/vim-surround'
+      " Surround
+      Plug 'tpope/vim-surround'
 
-    " Have the file system follow you around
-    Plug 'airblade/vim-rooter'
+      " Have the file system follow you around
+      Plug 'airblade/vim-rooter'
 
-    " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
+      " Better Syntax Support
+      Plug 'sheerun/vim-polyglot'
 
-    " Treesitter
-    Plug 'nvim-treesitter/nvim-treesitter'
-    Plug 'nvim-treesitter/playground'
+      " Treesitter
+      Plug 'nvim-treesitter/nvim-treesitter'
+      Plug 'nvim-treesitter/playground'
 
-    " FZF
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
-    Plug 'junegunn/fzf.vim'
+      " FZF
+      Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+      Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
+      Plug 'junegunn/fzf.vim'
+      
+      " Git
+      Plug 'airblade/vim-gitgutter'
+      Plug 'tpope/vim-fugitive'
+      Plug 'tpope/vim-rhubarb'
+      Plug 'junegunn/gv.vim'
+      Plug 'rhysd/git-messenger.vim'
 
-    " Cool Icons
-    Plug 'kyazdani42/nvim-web-devicons'
-    Plug 'ryanoasis/vim-devicons'
+      " Cool Icons
+      Plug 'kyazdani42/nvim-web-devicons'
+      Plug 'ryanoasis/vim-devicons'
 
-    " Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
+      " Auto pairs for '(' '[' '{'
+      Plug 'jiangmiao/auto-pairs'
 
-    " Intellisense
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+      " Intellisense
+      Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-    " nvim-editcommand
-    Plug 'brettanomyces/nvim-editcommand'
+      " nvim-editcommand
+      Plug 'brettanomyces/nvim-editcommand'
 
-    " Terminal
-    Plug 'voldikss/vim-floaterm'
-    
-    " See what keys do like in emacs
-    Plug 'liuchengxu/vim-which-key'
+      " Terminal
+      Plug 'voldikss/vim-floaterm'
+      
+      " See what keys do like in emacs
+      Plug 'liuchengxu/vim-which-key'
 
-    " Neovim in Browser
-    " Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+      " Neovim in Browser
+      " Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
     endif
 
 call plug#end()
