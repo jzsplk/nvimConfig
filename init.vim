@@ -10,22 +10,22 @@ source $HOME/.config/nvim/keys/mappings.vim
 " source $HOME/.config/nvim/plug-config/rnvimr.vim
 
 " try neo seting for vscode
-  if exists('g:vscode')
+if exists('g:vscode')
   " VS Code extension
   source $HOME/.config/nvim/vscode/settings.vim
   source $HOME/.config/nvim/plug-config/easymotion.vim
   source $HOME/.config/nvim/plug-config/highlightyank.vim
-  else
+else
     
-    " Plugin Configuration
-    source $HOME/.config/nvim/keys/which-key.vim
-    source $HOME/.config/nvim/plug-config/easymotion.vim
-    source $HOME/.config/nvim/plug-config/floaterm.vim
-    source $HOME/.config/nvim/plug-config/coc/coc.vim
-    source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
+" Plugin Configuration
+source $HOME/.config/nvim/keys/which-key.vim
+source $HOME/.config/nvim/plug-config/easymotion.vim
+source $HOME/.config/nvim/plug-config/floaterm.vim
+source $HOME/.config/nvim/plug-config/coc/coc.vim
+source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
     
 
 
 
 
-  endif
+endif
