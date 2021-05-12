@@ -22,6 +22,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
       " Plug 'asvetliakov/vim-easymotion'
       Plug 'ChristianChiarulli/vscode-easymotion'
       Plug 'machakann/vim-highlightedyank'
+      " Surround
+      Plug 'tpope/vim-surround'
 
     else
       
